@@ -1,0 +1,31 @@
+﻿@model List<OrtakProje.Models.Kitap>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index5</title>
+    <link href="~/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+
+</head>
+<body>
+    <h4>Merhaba Kitap Sayfamıza Hoş Geldiniz </h4>
+   <br />
+   <br />
+   <table>
+   @foreach(var k in Model)
+    {
+        <tr>
+            <td>@k.ID</td>
+            <td>@k.KitapAd</td>
+            <td>@k.Yazar</td>
+            <tr />
+        </tr>
+    }</table>
+</body>
+</html>
