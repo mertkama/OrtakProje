@@ -1,0 +1,3 @@
+# OrtakProje
+
+Güncellenecek.
