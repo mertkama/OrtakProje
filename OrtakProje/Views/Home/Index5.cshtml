@@ -15,9 +15,8 @@
 </head>
 <body>
     <h4>Merhaba Kitap Sayfamıza Hoş Geldiniz </h4>
-   <br />
-   <br />
-   <table>
+
+   <table class="table table-bordered">
    @foreach(var k in Model)
     {
         <tr>
@@ -26,6 +25,8 @@
             <td>@k.Yazar</td>
             <tr />
         </tr>
-    }</table>
+    }
+   </table>
+    <button class="btn btn-warning">Tablo Listesi</button>
 </body>
 </html>
